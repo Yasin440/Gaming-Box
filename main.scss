@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.gameArea {
+    .title {
+        text-transform: uppercase;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 3rem;
+    }
+
+    .title span {
+        color: brown;
+    }
+
+    .area {
+        table {
+            border: 1px solid green;
+            border-collapse: collapse;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+
+            td {
+                border: 1px solid green;
+                padding: 0;
+                box-sizing: border-box;
+                width: calc(100%/3);
+                height: calc(100%/3);
+
+
+            }
+
+            .arrowBox {
+                background-color: aqua;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transition: .5s all;
+
+                .icon {
+                    padding: 10px;
+                    background-color: brown;
+                    width: 50px;
+                    height: 50px;
+                    display: inline-block;
+                    border-radius: 2rem;
+                    cursor: pointer;
+                    border: 2px solid transparent;
+                    transition: .5s all;
+
+                    &:hover {
+                        border: 2px solid rgb(0, 4, 255);
+                    }
+                }
+
+                .icon-up {
+                    position: absolute;
+                    top: 3%;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                }
+
+                .icon-right {
+                    position: absolute;
+                    top: 50%;
+                    left: 67%;
+                    transform: translate(0, -50%);
+                }
+
+                .icon-down {
+                    position: absolute;
+                    bottom: 3%;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                }
+
+                .icon-left {
+                    position: absolute;
+                    top: 50%;
+                    right: 67%;
+                    transform: translate(0, -50%);
+                }
+
+                i {
+                    color: #fff;
+                    font-size: 25px;
+                    margin-left: 5px;
+                }
+            }
+
+        }
+    }
+}

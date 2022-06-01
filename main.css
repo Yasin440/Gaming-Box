@@ -1,0 +1,100 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+.gameArea .title {
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 3rem;
+}
+
+.gameArea .title span {
+  color: brown;
+}
+
+.gameArea .area table {
+  border: 1px solid green;
+  border-collapse: collapse;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+
+.gameArea .area table td {
+  border: 1px solid green;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: calc(100%/3);
+  height: calc(100%/3);
+}
+
+.gameArea .area table .arrowBox {
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+}
+
+.gameArea .area table .arrowBox .icon {
+  padding: 10px;
+  background-color: brown;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+}
+
+.gameArea .area table .arrowBox .icon:hover {
+  border: 2px solid #0004ff;
+}
+
+.gameArea .area table .arrowBox .icon-up {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.gameArea .area table .arrowBox .icon-right {
+  position: absolute;
+  top: 50%;
+  left: 67%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.gameArea .area table .arrowBox .icon-down {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.gameArea .area table .arrowBox .icon-left {
+  position: absolute;
+  top: 50%;
+  right: 67%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.gameArea .area table .arrowBox i {
+  color: #fff;
+  font-size: 25px;
+  margin-left: 5px;
+}
+/*# sourceMappingURL=main.css.map */
